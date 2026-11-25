@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Asif Hasan — Research Assistant at Shenzhen Research Institute, Hong Kong Metropolitan University.">
+  <title>Asif Hasan</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="publications.js" defer></script>
+  <script src="app.js" defer></script>
+  <script src="blog.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <header class="site-header"><nav aria-label="Main navigation">
+    <a href="#about" data-page="about" aria-current="page">about</a>
+    <a href="#blog" data-page="blog">blog</a>
+    <a href="#publications" data-page="publications">publications</a>
+    <button id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><span aria-hidden="true">☀</span></button>
+  </nav></header>
+  <main id="main" tabindex="-1">
+    <section id="about" aria-labelledby="about-title">
+      <h1 id="about-title"><strong>Asif</strong> Hasan</h1>
+      <p class="subtitle">Artificial Intelligence · Computer Vision · Robotics</p>
+      <div class="intro">
+        <figure class="profile"><img src="assets/github-avatar.jpg" alt="Asif Hasan's GitHub profile image" width="218" height="248"><figcaption>Shenzhen, China</figcaption></figure>
+        <div class="bio">
+          <p>Hello, I’m Asif.</p>
+          <p>I am a <strong>Research Assistant</strong> at the <span class="accent">Shenzhen Research Institute, Hong Kong Metropolitan University</span>, working on AI for robotic Chinese painting.</p>
+          <p>My interests bring together artificial intelligence, computer vision, and robotics. At Ningbo University, I worked on helping unmanned boats detect obstacles and understand their surroundings using cameras. I have also worked on autonomous drones and built the Octopus IoT cloud platform to control smart devices.</p>
+          <p>I am now exploring vision-language models, world models, and reinforcement learning for robotics. In the long run, I hope to apply AI and robotics to sustainable agriculture, food security, and protecting the environment, alongside people who care about improving lives and our planet.</p>
+          <p>Outside research, I enjoy cycling and exploring the city, reading, keeping fish, cooking occasionally, and making smart toys.</p>
+          <div class="post-papers" aria-label="Curriculum vitae">
+            <a href="assets/documents/Asif_Hasan_CV.pdf" target="_blank" rel="noopener">View CV (PDF)</a>
+            <a href="assets/documents/Asif_Hasan_CV.pdf" download="Asif_Hasan_CV.pdf">Download CV</a>
+          </div>
+          <div class="profile-links" aria-label="Social profiles and email">
+            <a class="social-icon" href="https://github.com/KakashiJiyayou" aria-label="GitHub" title="GitHub" style="--icon:url('assets/icons/github.svg')"></a>
+            <a class="social-icon" href="https://www.linkedin.com/in/w3nb0/" aria-label="LinkedIn" title="LinkedIn" style="--icon:url('assets/icons/linkedin-in.svg')"></a>
+            <a class="social-icon" href="https://orcid.org/0009-0009-8967-3933" aria-label="ORCID" title="ORCID" style="--icon:url('assets/icons/orcid.svg')"></a>
+            <a class="social-icon" href="mailto:rafibapi@gmail.com" aria-label="Personal email" title="Personal email: rafibapi@gmail.com" style="--icon:url('assets/icons/google.svg')"></a>
+            <span class="social-icon unavailable" role="img" tabindex="0" aria-label="X — account not yet available" title="X — account not yet available" style="--icon:url('assets/icons/x-twitter.svg')"></span>
+            <span class="social-icon unavailable" role="img" tabindex="0" aria-label="Instagram — account not yet available" title="Instagram — account not yet available" style="--icon:url('assets/icons/instagram.svg')"></span>
+          </div>
+        </div>
+      </div>
+      <section class="section-block" aria-labelledby="education-title"><h2 id="education-title">education</h2>
+        <dl class="timeline"><div><dt>2025</dt><dd><strong>Master’s · Ningbo University</strong><br>Communication Engineering and Information Systems</dd></div><div><dt>2019</dt><dd><strong>BSc · Ningbo University</strong><br>Electrical Engineering and Computer Science</dd></div></dl>
+      </section>
+      <section class="section-block" aria-labelledby="research-title"><div class="section-heading"><h2 id="research-title">latest publications</h2><a href="#publications">all publications <span aria-hidden="true">↗</span></a></div>
+        <div id="latest-publications"></div>
+      </section>
+      <section class="section-block contact" aria-labelledby="contact-title"><h2 id="contact-title">contact</h2><p><a href="mailto:mahasan@hkmu.edu.hk">mahasan@hkmu.edu.hk</a><br><a href="mailto:rafibapi@gmail.com">rafibapi@gmail.com</a></p></section>
+    </section>
+    <section id="blog" aria-labelledby="blog-title" hidden>
+      <h1 id="blog-title">blog</h1><p class="subtitle">Notes, projects, and videos.</p>
+      <div class="blog-filter"><label class="sr-only" for="blog-search">Search blog titles</label><input id="blog-search" type="search" placeholder="Type to filter" autocomplete="off" aria-controls="posts"><span id="blog-count" role="status" aria-live="polite"></span></div>
+      <div id="posts"></div><p id="blog-empty" class="empty" hidden>No matching posts.</p>
+    </section>
+    <section id="publications" aria-labelledby="publications-title" hidden>
+      <h1 id="publications-title">publications</h1><p class="subtitle">Conference papers</p>
+      <div id="all-publications"></div>
+      <p class="orcid-link"><a href="https://orcid.org/0009-0009-8967-3933">View ORCID record ↗</a></p>
+    </section>
+  </main>
+  <dialog id="media-dialog" aria-labelledby="media-title"><div class="media-heading"><h2 id="media-title">Media</h2><button id="close-media" aria-label="Close media" title="Close media">×</button></div><video id="media-video" controls controlslist="nodownload" playsinline preload="none"></video><img id="media-image" alt="" hidden><div id="media-navigation" hidden></div></dialog>
+  <footer><span>© 2026 Asif Hasan</span><a href="mailto:mahasan@hkmu.edu.hk">get in touch ↗</a></footer>
+  <noscript><p class="no-script">JavaScript is needed to switch pages. <a href="https://orcid.org/0009-0009-8967-3933">View publications on ORCID.</a></p></noscript>
+</body>
+</html>
